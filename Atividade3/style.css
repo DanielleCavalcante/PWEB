@@ -1,0 +1,106 @@
+/*cores e fonte */
+body{
+    background-color: #ffffff;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+/*links*/
+a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+/*ao passar o mouse*/
+a:hover{
+    color: #ff0000;
+}
+
+/*seções*/
+header{
+    background-color: #9c0f14; 
+    color: #ffffff;
+    padding: 10px 20px;
+}
+
+nav{
+    background-color: #b5191f;
+    float: left;
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a{
+    padding: 5px 10px;
+}
+
+nav ul li a:hover{
+    color: #ff0000;
+}
+
+section{
+    background-color: #ffffff;
+    border: 1px solid #ccc; 
+    padding: 20px;
+    overflow: hidden;
+}
+
+img {
+    height: 300px; 
+}
+
+.image-container {
+    float: right;
+    width: 60%;
+}
+  
+.topics {
+    position: relative;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+}
+  
+aside{
+    color: #333333;
+    padding: 20px;
+    margin: 5px 0;
+    float: right;
+    width: 20%;
+    height: 570px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */}
+
+aside a{
+    color: #333333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+  }
+  
+table tr, table td {
+    border: 3px solid #9c0f14; 
+    padding: 5px; 
+    text-align: center; 
+    background-color: #ececec;
+}
+
+table th {
+    background-color: #9c0f14; 
+    color: white;
+}
+  
+  

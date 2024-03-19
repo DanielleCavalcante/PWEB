@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Isso garante que as bordas e o preenchimento não afetem a largura e altura dos elementos */
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    color: #444444;
+    font-size: 14px;
+}
+
+.header {
+    background-color: #4267b2;
+    font-size: 16px;
+    padding: 15px;
+    color: #f1f1f1;
+    text-align: center;
+}
+
+nav{
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    width: 100%;
+    background-color: #ffffff;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Centraliza os itens horizontalmente */
+    gap: 20px;   /* espaço entre os cards */
+    list-style: none;
+    margin: 10px; 
+}
+
+nav ul li{
+    flex-grow: 1; /* Distribui o espaço disponível igualmente entre os itens */
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+}
+
+nav ul li:hover{
+    background-color: #7dabf4;
+}
+
+nav ul li a{
+    color: #666666;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #f1f1f1;
+}
+
+aside {
+    width: 20%; 
+    background-color: #ffffff; 
+    padding: 20px;
+    float: right;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    margin: 20px;
+    padding-bottom: 40px;
+}
+
+.titulo-aside{
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+.container-aside {
+    display: flex;   /* mais importante */
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;   /* espaço entre os cards */
+ }
+
+.card-aside {
+    color: #666666;
+    text-align: center;
+    padding: 20px;
+    width: 100%; 
+    max-width: 300px; 
+    border-bottom: 1px solid #ccc;
+}
+
+aside p{
+    margin: 8px;
+    text-align: left;
+}
+
+aside p a{
+    color:#666666;
+    text-decoration: none;
+}
+
+aside p a:hover {
+    color: rgb(190, 0, 0);
+    text-decoration: underline;
+}
+

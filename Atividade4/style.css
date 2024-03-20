@@ -19,7 +19,13 @@ body {
     font-size: 16px;
     padding: 15px;
     color: #f1f1f1;
-    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.header img{
+    height: 40px;
+    width: auto;
 }
 
 nav{
@@ -48,7 +54,7 @@ nav ul li{
 }
 
 nav ul li:hover{
-    background-color: #7dabf4;
+    background-color: rgb(255, 172, 19);
 }
 
 nav ul li a{
@@ -75,6 +81,27 @@ aside {
     border-bottom: 1px solid #ccc;
     padding: 10px;
 }
+
+aside p a{
+    color:#666666;
+    text-decoration: none;
+}
+
+aside p{
+    margin: 8px;
+    text-align: left;
+}
+
+.tempo-aside{
+    text-align: right;
+    font-size: 12px;
+}
+
+aside p a:hover {
+    color: rgb(190, 0, 0);
+    text-decoration: underline;
+}
+
 .container-aside {
     display: flex;   /* mais importante */
     flex-direction: column;
@@ -92,18 +119,73 @@ aside {
     border-bottom: 1px solid #ccc;
 }
 
-aside p{
-    margin: 8px;
+.nome-fonte{
+    font-weight: bold;
+    color: rgb(255, 172, 19);
+}
+.container-section-news {
+    display: flex;   /* mais importante */
+    flex-direction: column;
+    margin: 20px;
+    gap: 10px;   /* espaço entre os cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px;
+ }
+
+.container-section-news h2{
+    margin: 10px;
+    margin-bottom: 0;
+    text-align: left;
+ }
+
+.container-news{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.card-news {
+    display: flex;
+    color: #666666;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%; 
+    max-width: 400px; 
+}
+
+.card-news-image img{
+    width: 100px;
+    margin-right: 10px;
+}
+
+.card-news-text{
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+}
+
+.card-news-text a{
+    color: #666666;
+    text-decoration: none;
     text-align: left;
 }
 
-aside p a{
-    color:#666666;
-    text-decoration: none;
+.card-news-text p{
+    font-size: 10px;
+    color:#8a8a8a;
+    padding: 5px;
+    text-align: left;
 }
 
-aside p a:hover {
+.card-news a:hover{
     color: rgb(190, 0, 0);
     text-decoration: underline;
 }
 
+.card-news-text a h3{
+    font-weight: normal;
+    font-size: 14px;
+    padding: 5px;
+}

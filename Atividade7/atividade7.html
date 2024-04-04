@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 7 - Jogo</title>
+</head>
+<body>
+    <script>
+        while (escolha != 0){
+            alert("JOGO: PEDRA, PAPEL E TESOURA\n\nOpções:\n\n0- Sair\n1- Pedra\n2- Papel\n3-Tesoura")
+            var escolha = prompt("Sua escolha:");
+            escolha = parseInt(escolha);
+
+            var aleatorio = Math.random();
+            aleatorio = Math.floor((aleatorio * 3) + 1);
+
+            var nomeEscolha;
+            switch(escolha){
+                case 1:
+                    nomeEscolha = "Pedra";
+                    break;
+                case 2:
+                    nomeEscolha = "Papel";
+                    break;
+                case 3:
+                    nomeEscolha = "Tesoura";
+                    break;
+                default:
+                    nomeEscolha = "nada";
+                    break;
+            }
+
+            var nomeAleatorio;
+            switch(aleatorio){
+                case 1:
+                    nomeAleatorio = "Pedra";
+                    break;
+                case 2:
+                    nomeAleatorio = "Papel";
+                    break;
+                case 3:
+                    nomeAleatorio = "Tesoura";
+                    break;
+                default:
+                    break;
+            }
+
+            alert("Sua escolha: "+ nomeEscolha + "\nEscolha do seu oponente: " + nomeAleatorio);
+
+            if(escolha == aleatorio){
+                alert("Empate");
+            }else if(escolha == 1 && aleatorio == 2){
+                alert("Você perdeu");
+            }
+            else if(escolha == 1 && aleatorio == 3){
+                alert("Você ganhou");
+            }
+            else if(escolha == 2 && aleatorio == 1){
+                alert("Você ganhou");
+            }
+            else if(escolha == 2 && aleatorio == 3){
+                alert("Você perdeu");
+            }
+            else if(escolha == 3 && aleatorio == 1){
+                alert("Você perdeu");
+            }
+            else if(escolha == 3 && aleatorio == 2){
+                alert("Você ganhou");
+            }else if(aleatorio == 1 && escolha == 2){
+                alert("Você perdeu");
+            }
+            else if(aleatorio == 1 && escolha == 3){
+                alert("Você ganhou");
+            }
+            else if(aleatorio == 2 && escolha == 1){
+                alert("Você ganhou");
+            }
+            else if(aleatorio == 2 && escolha == 3){
+                alert("Você perdeu");
+            }
+            else if(aleatorio == 3 && escolha == 1){
+                alert("Você perdeu");
+            }
+            else if(aleatorio == 3 && escolha == 2){
+                alert("Você ganhou");
+            }
+        }
+        //fazer loop para o programa ficar sempre rodando
+    </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 var somaIdades = 0;
 var idadeMaisVelha = 0;
-var idadeMaisNova = 0;
+var idadeMaisNova = Number.MAX_VALUE;;
 var pessoasPessimo = 0;
 var pessoasOtimoBom = 0;
 var mulheres = 0;

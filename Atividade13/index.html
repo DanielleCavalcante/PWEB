@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 13 - Eventos</title>
+</head>
+<body style="display:flex;justify-content:center;align-items:center;">
+    
+    <div onmousemove="fecharJanela(this)"onmouseout="abrirJanela(this)" onmousedown="quebrarJanela(this)" 
+    style="padding:40px;">
+
+    <h1>Janela Aberta!</h1>
+    <img src="janelaaberta.png" id="imagemJanela">
+        
+    </div>
+
+    <script>
+        var image = document.getElementById("imagemJanela");
+
+        function quebrarJanela(obj) {
+            obj.querySelector("h1").textContent = "Janela Quebrada!";
+            image.src = "janelaquebra.png";
+        }
+
+        function abrirJanela(obj) {
+            obj.querySelector("h1").textContent = "Janela Aberta!";
+            image.src = "janelaaberta.png";
+        }
+
+        function fecharJanela(obj) {
+            //obj.innerHTML = "<h1>Janela Fechada!<h/1>"; - inner substitui tudo dentro da div
+            obj.querySelector("h1").textContent = "Janela Fechada!";
+            image.src = "janelafechada.png";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14 - Eventos</title>
+</head>
+<body>
+    <form name="atividade" id="atividade">
+        <input type="text" name="texto1" id="texto1" value="AAA" size="20">
+        <br>
+        Maiúscula: <input type="checkbox" name="maiusculo" id="maiusculo" onclick="alterarLetra()">
+        <br>
+        Minúscula: <input type="checkbox" name="minusculo" id="minusculo" onclick="alterarLetra()">
+    </form>
+    
+    <script>
+        function alterarLetra() {
+            var maiusculo = document.getElementById("maiusculo").checked;
+            var minusculo = document.getElementById("minusculo").checked;
+            var texto = document.getElementById("texto1").value;
+
+            // Lógica para transformar o texto em maiúsculas ou minúsculas
+            if (maiusculo && !minusculo) {
+                texto = texto.toUpperCase();
+            } else if (!maiusculo && minusculo) {
+                texto = texto.toLowerCase();
+            }
+
+            // Atualiza o valor do campo de texto com o texto modificado
+            document.getElementById("texto1").value = texto;
+        }        
+    </script>
+</body>
+</html>
